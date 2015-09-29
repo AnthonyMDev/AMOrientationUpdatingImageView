@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'AMOrientationUpdatingImageView_Example', :exclusive => true do
+  pod "AMOrientationUpdatingImageView", :path => "../"
+end
+
+target 'AMOrientationUpdatingImageView_Tests', :exclusive => true do
+  pod "AMOrientationUpdatingImageView", :path => "../"
+
+  pod 'FBSnapshotTestCase'
+end
