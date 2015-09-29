@@ -1,0 +1,17 @@
+PODS:
+  - AMOrientationUpdatingImageView (0.1.0)
+  - Nimble (2.0.0-rc.3)
+
+DEPENDENCIES:
+  - AMOrientationUpdatingImageView (from `../`)
+  - Nimble (= 2.0.0-rc.3)
+
+EXTERNAL SOURCES:
+  AMOrientationUpdatingImageView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AMOrientationUpdatingImageView: 0c5e994a7b14ca84a7841f4072f0e6aedf69f54c
+  Nimble: 9dff98ee195ffe7351d3b2fb01d3a1420fd97948
+
+COCOAPODS: 0.38.2
