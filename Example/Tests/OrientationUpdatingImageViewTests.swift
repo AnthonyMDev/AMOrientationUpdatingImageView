@@ -19,7 +19,7 @@ class OrientationUpdatingImageViewTests: XCTestCase {
   override func setUp() {
     super.setUp()
     
-    sut = OrientationUpdatingImageView(frame: CGRectZero)
+    sut = OrientationUpdatingImageView(frame: CGRect.zero)
     
     sut.portraitImage = UIImage(named: "PortraitImage")
     sut.landscapeImage = UIImage(named: "LandscapeImage")
@@ -36,7 +36,7 @@ class OrientationUpdatingImageViewTests: XCTestCase {
       _orientation = orientation
     }
     
-    private var _orientation: UIDeviceOrientation
+    fileprivate var _orientation: UIDeviceOrientation
     
     override var orientation: UIDeviceOrientation {
       return _orientation
@@ -44,7 +44,7 @@ class OrientationUpdatingImageViewTests: XCTestCase {
     
   }
   
-  func setOrientation(orientation: UIDeviceOrientation) {
+  func setOrientation(_ orientation: UIDeviceOrientation) {
     let device = MockDevice(orientation: orientation)
     sut.device = device
   }
@@ -57,7 +57,7 @@ class OrientationUpdatingImageViewTests: XCTestCase {
     // given
     let expectedData = UIImageJPEGRepresentation(self.sut.landscapeImage!, 0.0)
     
-    setOrientation(UIDeviceOrientation.LandscapeLeft)
+    setOrientation(UIDeviceOrientation.landscapeLeft)
     
     // when
     sut.layoutSubviews()
@@ -72,7 +72,7 @@ class OrientationUpdatingImageViewTests: XCTestCase {
     // given
     let expectedData = UIImageJPEGRepresentation(self.sut.portraitImage!, 0.0)
     
-    setOrientation(UIDeviceOrientation.Portrait)
+    setOrientation(UIDeviceOrientation.portrait)
     
     // when
     sut.layoutSubviews()
