@@ -1,27 +1,19 @@
 PODS:
-  - AMOrientationUpdatingImageView (1.0.0)
-  - Nimble (5.0.0-alpha.30p1)
+  - AMOrientationUpdatingImageView (1.1.0)
+  - Nimble (7.0.2)
 
 DEPENDENCIES:
   - AMOrientationUpdatingImageView (from `../`)
-  - Nimble (from `https://github.com/Quick/Nimble`, branch `swift-3.0`)
+  - Nimble (~> 7.0)
 
 EXTERNAL SOURCES:
   AMOrientationUpdatingImageView:
-    :path: "../"
-  Nimble:
-    :branch: swift-3.0
-    :git: https://github.com/Quick/Nimble
-
-CHECKOUT OPTIONS:
-  Nimble:
-    :commit: 220152be528dcc0537764c179c95b8174028c80c
-    :git: https://github.com/Quick/Nimble
+    :path: ../
 
 SPEC CHECKSUMS:
-  AMOrientationUpdatingImageView: 8454fdf359d3675716865e76087f9c9b365c785a
-  Nimble: c5b995b4cd57789ec44b0cfb79640fc00e61a8c7
+  AMOrientationUpdatingImageView: fb30163ee7e36ee2983c64db130181e1d703de01
+  Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
 
-PODFILE CHECKSUM: e29ad9221ea42006dd01cacaaeb57fcb2664ae74
+PODFILE CHECKSUM: ae3f7a84b111111236bd395e418bc0848746d086
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.3.0
