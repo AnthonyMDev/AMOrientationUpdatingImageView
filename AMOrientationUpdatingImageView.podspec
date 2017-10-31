@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "AMOrientationUpdatingImageView"
-  s.version          = "1.1.0"
+  s.version          = "1.2.0"
   s.summary          = "A UIImageView subclass that allows for different images to be used for portrait and landscape orientations."
 
   s.description      = <<-DESC
